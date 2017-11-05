@@ -226,6 +226,7 @@
         <div class="main-content-wrap">
             <p>I’m going to talk about logging in nodejs in this article. Logging is the most important part of your application but to make it work proper in scalable applications like microservice architectures becomes difficult, as you would want to know the logs you see are coming from where!</p>
 <p>I will show you how I make logging in nodejs streamlined and avoid logging at multiple places unnecessarily.</p>
+<h1 id="table-of-contents">Table of Contents</h1><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Implementing-Logging-in-Nodejs"><span class="toc-text">Implementing Logging in Nodejs</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Let’s-make-a-logger-service"><span class="toc-text">Let’s make a logger service</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Implement-error-handler-in-express"><span class="toc-text">Implement error handler in express</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Using-next-error-inside-your-routes"><span class="toc-text">Using next(error) inside your routes</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Using-logger-service-to-log-info-debug-etc-logs"><span class="toc-text">Using logger service to log info, debug etc logs</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Implement-remote-log-stream"><span class="toc-text">Implement remote log stream</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Integrate-logentries"><span class="toc-text">Integrate logentries</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Production-and-dev-environment-setup-in-logger-service"><span class="toc-text">Production and dev environment setup in logger service</span></a></li></ol></li></ol>
 <h2 id="Implementing-Logging-in-Nodejs"><a href="#Implementing-Logging-in-Nodejs" class="headerlink" title="Implementing Logging in Nodejs"></a>Implementing Logging in Nodejs</h2><p>A proper logging structure will make it easy for you and coming developers to put logs in your application. I’m using express framework in this article, but you can implement the same in any framework of your choice.</p>
 <p>We need a logging library to print logs, <a href="https://github.com/trentm/node-bunyan" target="_blank" rel="external">Bunyan</a> is a good option out there. Remember you can always replace your logger library easily inside our logger service and that’s the benefit of implementing this logger service.</p>
 <p>You can follow along the article and go through the code on <a href="https://github.com/ashisherc/demo-nodejs-logging" target="_blank" rel="external">github</a></p>
@@ -324,6 +325,12 @@
             </li>
         
         
+        <li class="post-action">
+            <a class="post-action-btn btn btn--default" href="#table-of-contents">
+                <i class="fa fa-list"></i>
+            </a>
+        </li>
+        
     </ul>
 </div>
 
@@ -409,6 +416,12 @@
                 </a>
             </li>
         
+        
+        <li class="post-action">
+            <a class="post-action-btn btn btn--default" href="#table-of-contents">
+                <i class="fa fa-list"></i>
+            </a>
+        </li>
         
     </ul>
 </div>
