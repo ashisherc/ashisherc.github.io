@@ -15,23 +15,23 @@
     
         <link rel="alternate" type="application/atom+xml" title="RSS" href="/atom.xml">
     
-    <meta name="description" content="As you know ICO = Ethereum (ERC20 token), but Ethereum is a big slow computer and to just raise funds for your startup, Stellar can do a lot faster, better and cheaper. Note that stellar does not prov">
+    <meta name="description" content="As you know, majority of the ICOs today are made on Ethereum (ERC20 token). But Ethereum is a big slow computer. If the intension is just to raise funds for the startup then Stellar can do a lot faste">
 <meta name="keywords" content="XLM,ICO,cryptocurrency">
 <meta property="og:type" content="blog">
 <meta property="og:title" content="Create an ICO on Stellar Network With Custom Token">
 <meta property="og:url" content="https://ashisherc.com/2018/02/04/create-an-ico-on-stellar-network-with-custom-token/index.html">
 <meta property="og:site_name" content="Ashish Prajapati">
-<meta property="og:description" content="As you know ICO = Ethereum (ERC20 token), but Ethereum is a big slow computer and to just raise funds for your startup, Stellar can do a lot faster, better and cheaper. Note that stellar does not prov">
+<meta property="og:description" content="As you know, majority of the ICOs today are made on Ethereum (ERC20 token). But Ethereum is a big slow computer. If the intension is just to raise funds for the startup then Stellar can do a lot faste">
 <meta property="og:locale" content="en">
 <meta property="og:image" content="https://res.cloudinary.com/ashisherc/image/upload/v1517768980/pbkvk62izkdkagv2wk62.png">
 <meta property="og:image" content="https://res.cloudinary.com/ashisherc/image/upload/v1517768980/pbkvk62izkdkagv2wk62.png">
 <meta property="og:image" content="https://res.cloudinary.com/ashisherc/image/upload/v1517770503/istvxao9b62acdovik1n.png">
 <meta property="og:image" content="https://res.cloudinary.com/ashisherc/image/upload/v1517770538/whc0hfajvfevffpl6n8e.png">
 <meta property="og:image" content="https://res.cloudinary.com/ashisherc/image/upload/v1517770597/fi10rnfwihulvxaccx1y.png">
-<meta property="og:updated_time" content="2018-02-04T19:10:05.587Z">
+<meta property="og:updated_time" content="2018-02-05T05:53:02.546Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Create an ICO on Stellar Network With Custom Token">
-<meta name="twitter:description" content="As you know ICO = Ethereum (ERC20 token), but Ethereum is a big slow computer and to just raise funds for your startup, Stellar can do a lot faster, better and cheaper. Note that stellar does not prov">
+<meta name="twitter:description" content="As you know, majority of the ICOs today are made on Ethereum (ERC20 token). But Ethereum is a big slow computer. If the intension is just to raise funds for the startup then Stellar can do a lot faste">
 <meta name="twitter:image" content="https://res.cloudinary.com/ashisherc/image/upload/v1517768980/pbkvk62izkdkagv2wk62.png">
 <meta name="twitter:creator" content="@ashisherc">
     
@@ -244,7 +244,7 @@
     
     <div class="post-content markdown" itemprop="articleBody">
         <div class="main-content-wrap">
-            <p>As you know ICO = Ethereum (ERC20 token), but Ethereum is a big slow computer and to just raise funds for your startup, Stellar can do a lot faster, better and cheaper. Note that stellar does not provide smart contracts, it is an open source platform for developing financial applications.</p>
+            <p>As you know, majority of the ICOs today are made on Ethereum (ERC20 token). But Ethereum is a big slow computer. If the intension is just to raise funds for the startup then Stellar can do a lot faster, better and cheaper! Note that stellar does not provide smart contracts, it is an open source platform for developing financial applications.</p>
 <p>Advantage of using Stellar platform for ICO is its cheap transaction fees, faster transactions and getting ICO online very fast with very less development time. Stellar transactions cost fraction of a penny compared to $$ on Ethereum. Another great advantage of using Stellar is, tokens are available on Stellar Distributed Exchange in a day, where anyone can trade without waiting for it to get listed on other exchanges.</p>
 <p>This article is about creating custom tokens on Stellar network and accepting BTC/ETH contributions in an ICO. You can read more on why Stellar can be a better ICO platform by <a href="https://twitter.com/anthenor" target="_blank" rel="external">Micha Benoliel</a> on <a href="https://hackernoon.com/why-stellar-could-be-the-next-big-ico-platform-f48fc3cb9a6c" target="_blank" rel="external">hackernoon</a>.</p>
 <h1 id="table-of-contents">Table of Contents</h1><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Create-Token"><span class="toc-text">Create Token</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Create-issuing-account"><span class="toc-text">Create issuing account</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Create-distributing-account"><span class="toc-text">Create distributing account</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Add-trustline"><span class="toc-text">Add trustline</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Issue-Tokens"><span class="toc-text">Issue Tokens</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Freeze-total-supply"><span class="toc-text">Freeze total supply</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Selling-token"><span class="toc-text">Selling token</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Accepting-XLM-Lumens"><span class="toc-text">Accepting XLM (Lumens)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Accepting-BTC-ETH"><span class="toc-text">Accepting BTC/ETH</span></a></li></ol></li></ol>
@@ -593,9 +593,7 @@ I will show you </div>
                                 
                             </span>
                         </span>
-                        <div class="media-content hide-xs font-merryweather">As you know ICO = Ethereum (ERC20 token), but Ethereum is a big slow computer and to just raise funds for your startup, Stellar can do a lot faster, better and cheaper. Note that stellar does not provide smart contracts, it is an open source platform for developing financial applications.
-
-Advantage</div>
+                        <div class="media-content hide-xs font-merryweather">As you know, majority of the ICOs today are made on Ethereum (ERC20 token). But Ethereum is a big slow computer. If the intension is just to raise funds for the startup then Stellar can do a lot faster, better and cheaper! Note that stellar does not provide smart contracts, it is an open source plat</div>
                     </div>
                     <div style="clear:both;"></div>
                     <hr>
