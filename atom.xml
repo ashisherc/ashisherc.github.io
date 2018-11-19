@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://ashisherc.com/"/>
-  <updated>2018-02-05T06:13:48.148Z</updated>
+  <updated>2018-11-19T11:23:16.563Z</updated>
   <id>https://ashisherc.com/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>A Brief View on Stellar in Remittance </title>
+    <link href="https://ashisherc.com/2018/11/19/a-brief-view-on-stellar-in-remittance/"/>
+    <id>https://ashisherc.com/2018/11/19/a-brief-view-on-stellar-in-remittance/</id>
+    <published>2018-11-19T10:32:45.000Z</published>
+    <updated>2018-11-19T11:23:16.563Z</updated>
+    
+    <content type="html"><![CDATA[<p>“Remittance is one of the great use case for blockchain technology”, you may have heard this sentence everywhere, but how exactly it can solve the problem is something I want to share my views about in this article.</p><p>Remittance has always been a painful process for users because of it’s high fees and slow processing. The problems with current remittance industry is not because they are greedy but because of the way it needs to operate. It is not technology or a process but the transfer of value is the key in remittance and that is where blockchain can come in the picture.</p><h2 id="Money-transfer-from-bank-to-bank-locally"><a href="#Money-transfer-from-bank-to-bank-locally" class="headerlink" title="Money transfer from bank to bank locally"></a>Money transfer from bank to bank locally</h2><p>If you send money from your bank account to your friend’s bank account, it just happens instantly and for free as well. That’s because the transfer of value is made simple by the central ccloudontrolling bank. If we take a brief look inside the process, we see that both the banks have their balances validated by the central bank.</p><p>Let’s consider Bank-A sends money to Bank-B, Bank-B accepts the transfer if Bank-A has enough balance to be paid, and that value is confirmed through the central bank’s records. Here the central bank supports the transfer of value.</p><div class="figure center nocaption" style="width:;"><img class="fig-img" src="https://res.cloudinary.com/ashisherc/image/upload/v1542625686/lxeyweexbhbevtey3bac.png" "="" alt=""></div><h2 id="Money-transfer-from-country-A-to-country-B"><a href="#Money-transfer-from-country-A-to-country-B" class="headerlink" title="Money transfer from country A to country B"></a>Money transfer from country A to country B</h2><p>When we send money across countries, there is no controlling bank to approve the value transfer and both the country’s central banks have to settle the transfer, which is a time consuming process. There are money transfer services available which operates quite differently.</p><p>The money transfer companies operate in limited countries where they have operations setup, For eg. A money transfer company named payACME, which operates in country A,B and C. When a user sends money from country A to B through payACME, the operations of payACME in country A will collect the money from the user and keep it with them, next the operations of payACME in country B will payout in local currency from their balance available.</p><p>Note that the real money transfer does not take place in this scenario, which makes the company keep enough balances in all countries, at some point of time the company might have to do real money transfer to balance their holdings. This process is faster but costlier because of huge holdings and operations in other countries.</p><h2 id="Money-transfer-using-Stellar-blockchain"><a href="#Money-transfer-using-Stellar-blockchain" class="headerlink" title="Money transfer using Stellar blockchain"></a>Money transfer using Stellar blockchain</h2><p>If possible we could send real value across borders without the need of central bank or any other entity, it solves the problem of remittance. This is exactly what Stellar does using it’s cryptocurrency Lumens (XLM) as value. Let’s now imagine a money transfer company in country A which does not have to operate in other countries but can still transfer real value to another company which operates in country B, it solves the problem. The Stellar blockchain network in between supports the real value transfer, let’s take a look at the below diagram.</p><div class="figure center nocaption" style="width:;"><img class="fig-img" src="https://res.cloudinary.com/ashisherc/image/upload/v1542625809/zry3nqrfcjiup1crpiov.png" "="" alt=""></div><p>As we can see, the company PayLive in country A collects money from user A, PayLive than sends equivalent amount of XLM over the stellar network to a company letsPay in country B. Keep in mind that, this Stellar network is used by everyone across the globe, these two companies are just among the thousands of the users of the network. XLM which are sent or received are easily tradable on the Stellar exchange for companies accepting USD assets or any other fiat currency.</p><p>After receiving payout order with XLMs from PayLive, the company letsPay will payout local currency to the user from its funds. The received XLM can be easily liquidated for fiat or any other pay order. Because of Stellar network in place the whole money transfer can be completed in under a few minutes with the lowest fees possible.</p><p>Looking for any help in Stellar or Blockchain project, lets get in touch on <a href="https://www.linkedin.com/in/ashisherc/" target="_blank" rel="external">LinkedIn</a></p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;“Remittance is one of the great use case for blockchain technology”, you may have heard this sentence everywhere, but how exactly it can solve the problem is something I want to share my views about in this article.&lt;/p&gt;
+&lt;p&gt;Remittance has always been a painful process for users because of it’s hig
+    
+    </summary>
+    
+      <category term="blockchain" scheme="https://ashisherc.com/categories/blockchain/"/>
+    
+    
+      <category term="XLM" scheme="https://ashisherc.com/tags/xlm/"/>
+    
+      <category term="cryptocurrency" scheme="https://ashisherc.com/tags/cryptocurrency/"/>
+    
+      <category term="remittance" scheme="https://ashisherc.com/tags/remittance/"/>
+    
+  </entry>
   
   <entry>
     <title>Create an ICO on Stellar Network With Custom Token</title>
@@ -27,7 +54,7 @@
     
     <summary type="html">
     
-      As you know, majority of the ICOs today are made on Ethereum (ERC20 token). But Ethereum is a big slow computer. If the intension is just to raise funds for the startup then Stellar can do a lot faster, better and cheaper! Note that stellar does not provide smart contracts, it is an open source plat
+      &lt;p&gt;As you know, majority of the ICOs today are made on Ethereum (ERC20 token). But Ethereum is a big slow computer. If the intension is just to raise funds for the startup then Stellar can do a lot faster, better and cheaper! Note that stellar does not provide smart contracts, it is an open source p
     
     </summary>
     
@@ -53,9 +80,8 @@
     
     <summary type="html">
     
-      I’m going to talk about logging in nodejs in this article. Logging is the most important part of your application but to make it work proper in scalable applications like microservice architectures becomes difficult, as you would want to know the logs you see are coming from where!
-
-I will show you 
+      &lt;p&gt;I’m going to talk about logging in nodejs in this article. Logging is the most important part of your application but to make it work proper in scalable applications like microservice architectures becomes difficult, as you would want to know the logs you see are coming from where!&lt;/p&gt;
+&lt;p&gt;I will 
     
     </summary>
     
