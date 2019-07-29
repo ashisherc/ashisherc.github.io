@@ -23,7 +23,7 @@
 <meta property="og:site_name" content="Ashish Prajapati">
 <meta property="og:description" content="If you are building micro services, you really would want to share common utility code between them. While copy pasting is not a solution, you can create private npm packages and use them into your se">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-07-29T01:42:23.709Z">
+<meta property="og:updated_time" content="2019-07-29T14:51:58.506Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="How I Deployed and Configured a Private NPM Registry for a Micro Services Project">
 <meta name="twitter:description" content="If you are building micro services, you really would want to share common utility code between them. While copy pasting is not a solution, you can create private npm packages and use them into your se">
@@ -239,10 +239,10 @@
 <p>I am going to use Verdaccio for the private registry server, note that this article is NOT on how to use verdaccio but to share my configurations which work well across my development team and all the services in the project.</p>
 <h1 id="table-of-contents">Table of Contents</h1><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Benefits"><span class="toc-text">Benefits</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Installation"><span class="toc-text">Installation</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Setup-Config-file"><span class="toc-text">Setup Config file</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Generate-Credentials"><span class="toc-text">Generate Credentials</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Start-Verdaccio-Server"><span class="toc-text">Start Verdaccio Server</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Create-Admin-User-Credential"><span class="toc-text">Create Admin User Credential</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Create-Dev-User-Credential"><span class="toc-text">Create Dev User Credential</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Setup-package-to-use-private-registry"><span class="toc-text">Setup package to use private registry</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Create-npmrc-file"><span class="toc-text">Create .npmrc file</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Publish-the-package"><span class="toc-text">Publish the package</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Setup-Project-to-use-private-package"><span class="toc-text">Setup Project to use private package</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Disable-new-user-registration"><span class="toc-text">Disable new user registration</span></a></li></ol>
 <h2 id="Benefits"><a href="#Benefits" class="headerlink" title="Benefits"></a>Benefits</h2><ol>
-<li>Easy, Read only package sharing across development team</li>
+<li>Easy, Read only package sharing across the development team</li>
 <li>Integration with CI/CD pipelines</li>
 <li>Developers in the team can make PR for changes in the packages</li>
-<li>Single Admin access to the registry server</li>
+<li>Single Admin access to the registry server (can be multiple users as needed)</li>
 </ol>
 <h2 id="Installation"><a href="#Installation" class="headerlink" title="Installation"></a>Installation</h2><p>We will install the Verdaccio server on a VM and configure the server and later modify the configurations for the security. You can setup the registry server on an EC2 instance or a free Azure App Service Plan. I tried modifying the Verdaccio source to run on AWS Lambda, but it looks impossible because of the Lambda limitations, I will leave this topic for may be another article. Let me know in the comments below if you are able to deploy Verdaccio to Lambda.</p>
 <p>On any server with SSH connection. Let’s install the server first.</p>
